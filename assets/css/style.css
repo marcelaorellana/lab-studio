@@ -54,7 +54,6 @@ p.cursi{
 	
 }
 
-
 /********************HEADER*********************/
 .header{
 	background-image: url(../img/header-bg.jpg);
@@ -332,6 +331,11 @@ p.cursi{
 /**************************BRANDS*****************/
 .brands{
 	padding: 5vh 0;
+	text-align: center;
+}
+.brand-row img{
+	margin: 0 auto;
+	padding: 5px 0;
 }
 /********************CONTACT*************************/
 .contact{
@@ -340,7 +344,7 @@ p.cursi{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100vh;
+	
 	text-align: center;
 	padding: 8vh 0;
 }
@@ -386,6 +390,14 @@ p.cursi{
 }
 .button-contact{
 	text-align: center;
+}
+@media (max-width: 992px) { 
+	.contact-left, .contact-right{
+		text-align: center;
+	}
+	.contact-right{
+		text-align: center;
+	}
 }
 /**********************FOOTER**********************/
 footer{
