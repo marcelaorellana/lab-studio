@@ -91,6 +91,19 @@ p.cursi{
 .header .texto button:hover{
 	background-color: #F0C327; /*amarillo oscuro*/
 }
+@media (max-width: 992px){
+	.header{
+		height: auto;
+		padding-top: 90px;
+	}
+	.header .texto h1{
+		font-size: 40px;
+	}
+	.header .texto h2{
+		font-size: 20px;
+	}
+
+}
 /*****************************SERVICES*********************/
 .services{
 	text-align: center;
