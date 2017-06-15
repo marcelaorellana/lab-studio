@@ -145,10 +145,13 @@ p.cursi{
 }
 .porta-group{
 	margin: 0 auto;
+	text-align: center;
 }
 .porta-img{
 	background-color: #EEEEEE; /*gris claro fondo*/
 	padding: 9px;
+	text-align: center;
+	margin: 0 auto;
 }
 .margen{
 	box-sizing: border-box;
@@ -156,6 +159,7 @@ p.cursi{
 	background-color: #fff;
 	max-width: 400px;
 	padding-bottom: 5px;
+	margin: 0 auto;
 }
 .portafolio h1{
 	font-family: 'Montserrat', sans-serif;
