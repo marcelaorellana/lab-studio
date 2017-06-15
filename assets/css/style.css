@@ -30,15 +30,30 @@ p.cursi{
 	background-color: transparent;
 	width: 100%;
 	border: none;
+	padding: 5px;
+	z-index: 9;
 }
 .navbar-default .navbar-nav>li>a{
 	color: #fff;
+	margin: 5px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #FED136; /*amarillo claro*/
+	
 }
 .navbar-default .navbar-brand{
 	color: #FED136; /*amarillo claro*/
 	font-family: 'Kaushan Script', cursive;
 	font-size: 30px;
 }
+/***********************CAMBIAS*****************/
+.cambiaNav{
+	background-color: #222222; /*gris mas oscuro*/
+}
+.cambiaNav .navbar-nav>li>a{
+	
+}
+
 
 /********************HEADER*********************/
 .header{
@@ -73,6 +88,9 @@ p.cursi{
 	font-weight: 700;
 	font-size: 20px;
 	margin: 20px;
+}
+.header .texto button:hover{
+	background-color: #F0C327; /*amarillo oscuro*/
 }
 /*****************************SERVICES*********************/
 .services{
@@ -217,16 +235,39 @@ p.cursi{
 }
 .izq, .der, .circle-yellow{
 	padding: 6vh 0;
+	display: flex;
 }
 
-/*
-.text1{
-	order: 2;
+
+@media (max-width: 992px) { 
+	.text1{
+		order: 2;
+	}
+	.circulo{
+		order: 1;
+		padding: 0;
+	}
+	.text2{
+		order: 2;
+	}
+	[class^="circle-"]{
+		width: 100px;
+		height: 100px;
+
+	}
+	.izq .text1{
+		text-align: left;
+		padding: 0 20px;
+		margin: 0 0 0 30px;
+	}
+	.der .text2{
+		padding: 0 20px;
+		margin: 0 0 0 30px;
+	}
+	.der .text2 h3, .izq .text1 h3{
+		font-size: 16px;
+	}
 }
-.circulo{
-	order: 1;
-}
-*/
 /**********************TEAM*************************/
 .team{
 	background-color: #EEEEEE; /*gris claro fondo*/
@@ -339,6 +380,9 @@ p.cursi{
 	font-size: 20px;
 	margin: 20px;
 	color: #fff;
+}
+.contact button:hover{
+	background-color: #F0C327; /*amarillo oscuro*/
 }
 .button-contact{
 	text-align: center;
