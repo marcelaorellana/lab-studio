@@ -13,6 +13,11 @@ h1{
 	font-weight: 700;
 	font-size: 40px;
 }
+p{
+	font-family: 'Droid Serif', serif;
+	color: #77787a; /*gris parrafo*/
+	font-size: 12px;
+}
 p.cursi{
 	font-family: 'Droid Serif', serif;
 	color: #77787a; /*gris parrafo*/
@@ -99,11 +104,6 @@ p.cursi{
 .services h1{
 	font-size: 40px;
 }
-.services p{
-	font-family: 'Droid Serif', serif;
-	color: #77787a; /*gris parrafo*/
-	font-size: 12px;
-}
 #services-row{
 	margin: 9vh 0;
 }
@@ -118,13 +118,14 @@ p.cursi{
 }
 .porta-img{
 	background-color: #EEEEEE; /*gris claro fondo*/
-	padding: 5px;
+	padding: 9px;
 }
 .margen{
 	box-sizing: border-box;
 	padding: 0;
 	background-color: #fff;
 	max-width: 400px;
+	padding-bottom: 5px;
 }
 .portafolio h1{
 	font-family: 'Montserrat', sans-serif;
@@ -134,53 +135,90 @@ p.cursi{
 .portafolio h4{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
+	padding: 5px 0;
 }
 /***********************************ABOUT**********************/
 .text-about{
 	text-align: center;
+	padding: 6vh 0;
 }
-
-.circle-1{
-	
+.circle-1{	
 	background-image: url(../img/1.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px; 
-}
-.col-img{
-	
-
+	width: 160px;
+	height: 160px; 
 }
 .circle-2{
 	background-image: url(../img/2.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px; 
+	width: 160px;
+	height: 160px; 
 }
 .circle-3{
 	background-image: url(../img/3.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
 }
 .circle-4{
 	background-image: url(../img/4.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
+}
+.circle-5{
+	background: #FED136; /*amarillo claro*/
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	wwidth: 160px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+.circle-5 h4{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+}
+.izq .text1{
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	padding-left: 100px;
+}
+.izq .text1 h3{
+	margin: 5px 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+.der .text2{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	padding-right: 100px;
+}
+.der .text2 h3{
+	margin: 5px 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+.izq, .der, .circle-yellow{
+	padding: 6vh 0;
 }
 
-.izq{
-	display: flex;
-}
 /*
 .text1{
 	order: 2;
@@ -189,3 +227,137 @@ p.cursi{
 	order: 1;
 }
 */
+/**********************TEAM*************************/
+.team{
+	background-color: #EEEEEE; /*gris claro fondo*/
+	text-align: center;
+	padding: 8vh 0;
+}
+.team-text{
+	padding: 40px 0;
+}
+.team-img1{
+	background-image: url(../img/1team.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	width: 200px;
+	height: 200px; 
+	margin: 0 auto;
+}
+.team-img2{
+	background-image: url(../img/2team.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	width: 200px;
+	height: 200px; 
+	margin: 0 auto;
+}
+.team-img3{
+	background-image: url(../img/3team.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	width: 200px;
+	height: 200px; 
+	margin: 0 auto;
+}
+.team h5{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+.team .icon{
+	display: inline-block;
+	background-color: #222222; /*gris mas oscuro*/
+	border-radius: 50%;
+	cursor: pointer;
+}
+.team i{
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	margin: 12px;
+	color: #fff;
+}
+.p-team{
+	width: 80%;
+	margin: 0 auto;
+	padding: 5vh;
+}
+/**************************BRANDS*****************/
+.brands{
+	padding: 5vh 0;
+}
+/********************CONTACT*************************/
+.contact{
+	background-color: #222222; /*gris mas oscuro*/
+	background-image: url(../img/map-image.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	text-align: center;
+	padding: 8vh 0;
+}
+.contact h1{
+	color: #fff;
+}
+.contact input{
+	width: 80%;
+    padding: 12px 20px;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact textarea{
+	width: 80%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact-left, .contact-right{
+	text-align: right;
+}
+.contact-right{
+	text-align: left;
+}
+.contact button{
+	background-color: #FED136; /*amarillo claro*/
+	padding: 20px 30px;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	margin: 20px;
+	color: #fff;
+}
+.button-contact{
+	text-align: center;
+}
+/**********************FOOTER**********************/
+footer{
+	text-align: center;
+	padding: 4vh 0;
+}
+footer .icon{
+	display: inline-block;
+	background-color: #222222; /*gris mas oscuro*/
+	border-radius: 50%;
+	cursor: pointer;
+}
+footer .icon i{
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	color: #fff;
+}
